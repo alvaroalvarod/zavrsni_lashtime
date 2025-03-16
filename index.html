@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lash Time - Početna</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <img src="slike/biljka.png" height="20%" width="20%" class="biljka">
+        <img src="slike/biljka.png" height="20%" width="20%" class="biljka-right"> 
+        <h1><img src="svg/veliki_logo.svg" alt=""></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="galerija.html">Galerija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="o_nama.html">O nama</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Prva tri sectiona u istom redu -->
+        <div class="section-container">
+            <section>
+                <h2>Dobrodošli u Lash Time</h2>
+                <p>Vaše omiljeno mjesto za profesionalne tretmane trepavica i obrva.</p>
+                <img src="slike/slika_1.jpg" alt="Salon Lash Time">
+            </section>
+
+            <section>
+                <h3>Naše usluge</h3>
+                <ul>
+                    <li><strong>Ekstenzije trepavica</strong> - Produžite i naglasite svoje trepavice uz prirodan ili dramatičan izgled.</li>
+                    <li><strong>Laminacija obrva</strong> - Oblikujte i naglasite svoje obrve za postojan i uredan izgled.</li>
+                    <li><strong>Njega prirodnih trepavica</strong> - Ojačajte i njegujte svoje prirodne trepavice za zdrav i njegovan izgled.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Video prezentacija</h3>
+                <video controls>
+                    <source src="videos/promo.mp4" type="video/mp4">
+                    Vaš preglednik ne podržava video element.
+                </video>
+            </section>
+        </div>
+
+        <!-- Ostali sectioni ispod -->
+        <div class="other-sections">
+            <section>
+                <h3>Anketa</h3>
+                <form action="#" method="post">
+                    <label for="pitanje">Kako ste čuli za nas?</label>
+                    <select id="pitanje" name="pitanje">
+                        <option value="prijatelji">Preporuka prijatelja</option>
+                        <option value="internet">Pretraga na internetu</option>
+                        <option value="drugo">Drugo</option>
+                    </select>
+                    <button type="submit">Pošalji</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Lash Time. Sva prava pridržana.</p>
+    </footer>
+</body>
+</html>
