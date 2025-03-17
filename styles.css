@@ -596,3 +596,37 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
+
+
+
+
+
+figcaption {
+    position: absolute;
+    bottom: 10px; /* Pozicionira caption 10px od dna slike */
+    left: 10px; /* Pozicionira caption 10px od lijeve strane slike */
+    background-color: rgba(0, 0, 0, 0.6); /* Poluprozirna pozadina za caption */
+    color: white; /* Bijela boja teksta */
+    padding: 5px 10px; /* Unutarnji razmak */
+    border-radius: 5px; /* Zaobljeni rubovi */
+    font-size: 14px; /* Veličina fonta */
+}
+
+/* Postavljanje pozicije figure kao relativne, da figcaption može biti apsolutno pozicioniran u odnosu na nju */
+.fig {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+
+
