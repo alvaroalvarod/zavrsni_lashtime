@@ -121,16 +121,36 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    gap: 2%;
     padding-top: 100px;
 }
 
 .other-sections section {
-    max-width: 900px;
+    min-width: 50%;
     background: white;
-    padding: 25px;
+    padding: 2%;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.other-sections section form {
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.anketa select {
+    appearance: none; /* Uklanja defaultni izgled browsera */
+    background-color: #fff;
+    border: 2px solid #d1a3a4;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
 }
 
 /* MEDIJSKI UPITI - RESPONSIVNOST */
@@ -380,6 +400,10 @@ footer.usluge {
 
     .section-container section {
         margin-top: 2%;
+    }
+
+    .section-container section .video {
+        min-width: 100%;
     }
 
     .services-grid {
