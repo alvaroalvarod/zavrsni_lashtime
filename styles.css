@@ -88,10 +88,11 @@ main {
 .section-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 2%;
     flex-wrap: wrap;
     width: 75%;
     margin: auto;
+    margin-bottom: 2%;
 }
 
 .section-container section h3 {
@@ -203,22 +204,16 @@ footer {
 
 
 .gallery-grid img[src="slike/slika_5.jpg"] {
-    margin-top: -185px; /* Adjust the value as needed */
+    margin-top: -185px; 
 }
 
 .gallery-grid img[src="slike/slika_6.jpg"] {
-    margin-top: -185px; /* Adjust the value as needed */
+    margin-top: -185px; 
 }
 
 .gallery-grid img[src="slike/slika_7.jpg"] {
     height: 90%;
 }
-
-
-
-
-
-
 
 
 
@@ -383,8 +378,12 @@ footer.usluge {
         padding: 15px;
     }
 
+    .section-container section {
+        margin-top: 2%;
+    }
+
     .services-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust grid on smaller screens */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     }
 }
 
