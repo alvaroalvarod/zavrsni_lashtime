@@ -198,6 +198,7 @@ footer {
     padding: 20px;
     max-width: 1000px; /* Povećava širinu galerije */
     margin: auto;
+    
 }
 
 .gallery-grid img {
@@ -226,17 +227,18 @@ footer {
 }
 
 
-.gallery-grid img[src="slike/slika_5.jpg"] {
-    margin-top: -185px; 
+ .gallery-grid img[src="slike/slika_14.jpeg"] {
+    height: 100%; 
 }
 
+/*
 .gallery-grid img[src="slike/slika_6.jpg"] {
     margin-top: -185px; 
 }
 
 .gallery-grid img[src="slike/slika_7.jpg"] {
     height: 90%;
-}
+} */
 
 
 
