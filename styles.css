@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /* OPĆI STILOVI */
 body {
     font-family: 'Poppins', sans-serif;
@@ -574,6 +577,11 @@ footer {
 @media (max-width: 768px) {
     .about-intro h2 {
         font-size: 28px;
+    }
+
+    .video {
+        width: 300px;
+        height: 168,75px; 
     }
 
     .about-team h3 {
