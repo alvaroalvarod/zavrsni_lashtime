@@ -15,7 +15,10 @@
         <img src="slike/biljka.png" height="20%" width="20%" class="biljka-right"> 
         <h1><img src="svg/veliki_logo.svg" alt=""></h1>
         <nav>
-            <ul>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+            <ul id="nav-list">
                 <li><a href="index.html">Početna</a></li>
                 <li><a href="usluge.html">Usluge</a></li>
                 <li><a href="galerija.html">Galerija</a></li>
@@ -24,6 +27,12 @@
                 <li><a href="#anketa">Anketa</a></li>
             </ul>
         </nav>
+        <script>
+            function toggleMenu() {
+                document.getElementById("nav-list").classList.toggle("show");
+            }
+        </script>
+        
     </header>
     
     <main>
@@ -48,12 +57,13 @@
                     <li><strong>Njega prirodnih trepavica</strong> - Ojačajte i njegujte svoje prirodne trepavice za zdrav i njegovan izgled.</li>
                 </ul>
             </section>
+   
+        </div>
+        <div id="video">
             <section class="video">
-                <h3>Video prezentacija</h3>
-                <iframe width="400" height="225" style="border-radius: 23px;" src="https://www.youtube.com/embed/LYJV9mCsREM?si=uq6OHK3IDIG_M7ML" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe  style="border-radius: 20px;" width="1000px" height="500px" src="https://www.youtube.com/embed/LYJV9mCsREM?si=uq6OHK3IDIG_M7ML" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </section>
         </div>
-
         <!-- Ostali sectioni ispod -->
         <div class="other-sections" id="anketa">
             <section>

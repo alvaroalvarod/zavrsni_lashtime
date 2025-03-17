@@ -174,11 +174,6 @@ img {
     border-radius: 15px;
 }
 
-video {
-    width: 100%;
-    border-radius: 15px;
-}
-
 /* FOOTER */
 footer {
     text-align: center;
@@ -254,6 +249,7 @@ footer {
     margin-bottom: 10px;
 }
 
+
 /* STILIZACIJA FORME */
 form {
     display: flex;
@@ -291,13 +287,6 @@ form button {
 form button:hover {
     background-color: #9b6a47;
 }
-
-
-
-
-
-
-
 
 /* OPĆI STILOVI */
 body.usluge {
@@ -407,8 +396,9 @@ footer.usluge {
         margin-top: 2%;
     }
 
-    .section-container section .video {
-        min-width: 100%;
+    .video {
+        width: auto;
+        height: auto;
     }
 
     .services-grid {
@@ -433,7 +423,7 @@ body.about-page {
 }
 
 /* NAVIGATION */
-nav {
+/* nav {
     background: #A57442;
     padding: 15px 0;
     display: flex;
@@ -470,7 +460,120 @@ nav ul li a {
 nav ul li a:hover, nav ul li a.active {
     background-color: white;
     color: #A57442;
+} */
+
+/* Navigacija */
+nav {
+    background: #B17F59;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1000;
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Skriveni hamburger meni na većim ekranima */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+
+/* Navigacijska lista */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: white;
+    color: #B57F50;
+}
+
+/* RESPONSIVE STILOVI */
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+    nav {
+        height: 50px;
+        border-radius: 0%;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Smanji širinu navigacije */
+        padding: 10px 0; 
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #B17F59;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+        border-radius: 0 0 15px 15px;
+        gap: 15px; /* Smanji razmak između stavki */
+        text-align: center;
+    }
+
+    #nav-list ul li {
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+    }
+
+    #nav-list .show {
+        width: 80% !important;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 20px; /* Smanji padding unutar linkova */
+        font-size: 16px; /* Smanji font */
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+}
+
 
 /* ABOUT US INTRODUCTION */
 .about-intro {
