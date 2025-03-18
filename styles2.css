@@ -1,5 +1,7 @@
 html {
     scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -472,6 +474,8 @@ footer {
 
     html {
         overflow-x: hidden;
+        padding: 0;
+        margin: 0;
     }
 
     nav {
@@ -511,6 +515,18 @@ footer {
         display: flex;
     }
 
+    .services-section {
+        padding: 15px;
+    }
+
+    .section-container {
+        margin-top: 2%;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+
     .section-container h1 {
         font-size: 14pt;
     }
@@ -523,5 +539,33 @@ footer {
 
     .section-container .manji-div h3 {
         font-size: 14pt;
+    }
+
+    .about-intro h2 {
+        font-size: 28px;
+    }
+
+    .about-team h3 {
+        font-size: 24px;
+    }
+
+    .company-philosophy h3 {
+        font-size: 24px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        justify-content: center;
+        margin-bottom: 55%;
+        margin-top: 15%;
+    }
+
+    footer {
+        height: 100px;
+        bottom: 0;
     }
 }
