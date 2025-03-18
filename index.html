@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lash Time - Početna</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
     <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="slike/favicon.png">
 </head>
@@ -23,7 +23,7 @@
                 <li><a href="usluge.html">Usluge</a></li>
                 <li><a href="galerija.html">Galerija</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
-                <li><a href="o_nama.html">O nama</a></li>
+                <li><a href="o_nama.html">Priča</a></li>
                 <li><a href="#anketa">Anketa</a></li>
             </ul>
         </nav>
@@ -32,43 +32,39 @@
                 document.getElementById("nav-list").classList.toggle("show");
             }
         </script>
-        
     </header>
-    
     <main>
         <div class="section-container">
-            <section>
-                <h2>Dobrodošli u Lash Time</h2>
-                <p>Vaše omiljeno mjesto za profesionalne tretmane trepavica i obrva.</p>
-                    <img src="slike/slika_1.jpg" alt="salon-lash-time">
-            </section>
-            <section>
-                <img src="slike/lashtime_dan.jpg" alt="salon-lash-time-izvana">
-                <img src="slike/lashtime_izvan.jpg" alt="salon-lash-time-izvana">
-            </section>
+            <h1>Dobrodošli u Lash Time</h1>               
+            <div class="veliki-div">
+                <div class="mali-div">
+                    <img src="slike/slika_1.jpg" alt="salon-lash-time">                
+                </div>
+                <div class="mala-galerija">
+                    <img src="slike/lashtime_dan.jpg" alt="salon-lash-time-izvana">
+                    <img src="slike/lashtime_izvan.jpg" alt="salon-lash-time-izvana">
+                </div>               
+            </div>
         </div>
-        <!-- Prva tri sectiona u istom redu -->
         <div class="section-container">
             <section>
-                <h3>Naše usluge</h3>
+                <h2>Naše usluge</h2>
                 <ul>
                     <li><strong>Ekstenzije trepavica</strong> - Produžite i naglasite svoje trepavice uz prirodan ili dramatičan izgled.</li>
                     <li><strong>Laminacija obrva</strong> - Oblikujte i naglasite svoje obrve za postojan i uredan izgled.</li>
                     <li><strong>Njega prirodnih trepavica</strong> - Ojačajte i njegujte svoje prirodne trepavice za zdrav i njegovan izgled.</li>
                 </ul>
             </section>
-   
         </div>
-        <div id="video">
-            <section class="video">
+        <div class="section-container">
+            <h1> Naša video reklama </h1>
+            <div class="iframe-container">
                 <iframe  style="border-radius: 20px;" width="1000px" height="500px" src="https://www.youtube.com/embed/LYJV9mCsREM?si=uq6OHK3IDIG_M7ML" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </section>
+            </div>
         </div>
-        <!-- Ostali sectioni ispod -->
-        <div class="other-sections" id="anketa">
-            <section>
-                <h2>Anketa</h2>
-                <form action="#" method="post">
+        <div class="section-container" id="anketa">
+            <h1>Anketa</h1>
+                <form action="#" method="post" class="form1">
                     <div class="anketa">
                         <label for="pitanje">Kako ste čuli za nas?</label>
                         <select id="pitanje" name="pitanje">
@@ -113,10 +109,8 @@
                     </div> 
                     <button type="submit">Pošalji</button>
                 </form>
-            </section>
-        </div>
+            </div>
     </main>
-    
     <footer>
         <p>&copy; 2025 Lash Time, Anna Dubrović. Sva prava pridržana.</p>
     </footer>

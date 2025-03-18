@@ -1,0 +1,527 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --boja1: #B17F59;
+    --boja2: #DCE2AA;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--boja2);
+    overflow-x: hidden;
+}
+
+header {
+    background-color: var(--boja1);
+    color: white;
+    padding: 10%;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+header img.biljka {
+    position: absolute;
+    top: -10%;
+    left: -25%;
+    height: 117%;
+    width: auto;
+}
+
+header img.biljka-right {
+    position: absolute;
+    top: -10%;
+    right: -25%;
+    height: 117%;
+    width: auto;
+    transform: scaleX(-1);
+}
+
+nav {
+    background: var(--boja1);
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 1000;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0px 18px 37px -13px rgba(0,0,0,0.32);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: white;
+    color: var(--boja1);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+}
+
+main {
+    padding: 140px 20px 20px;
+    text-align: center;
+}
+
+.section-container {
+    background: white;    
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 3%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    box-shadow: 0px 50px 53px 4px rgba(0,0,0,0.14);
+    flex: 1;
+    max-width: 50%;
+    min-width: 30%;
+}
+
+.section-container h1 {
+    font-size: 30pt;
+}
+
+.section-container ul {
+    font-size: 14pt;
+    line-height: 2;
+    text-align: left;
+    padding: 10px;
+}
+
+.section-container .veliki-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1%;
+}    
+
+.section-container .mali-div{
+    flex: 1;
+    width: 100%;
+}
+
+.section-container .mali-div img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.section-container .mali-div img:hover {
+    transform: scale(1.03);
+}
+
+.section-container .mali-div p {
+    font-size: 16pt;
+    margin: 0;
+}
+
+.section-container .mali-div form {
+    flex-direction: column;
+}
+
+.section-container .mala-galerija {
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+}
+
+.section-container .mala-galerija img {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 1%;
+    transition: transform 0.5s ease;
+}
+
+.section-container .mala-galerija img:hover {
+    transform: scale(1.03);
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 omjer odnosno (9 / 16 * 100) */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.section-container .form1 {
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-container .form1 label {
+    font-weight: bold;
+}
+
+.section-container .form1 .anketa select {
+    appearance: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid var(--boja1);
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    width: 30%;
+    transition: border-bottom 0.3s;
+}
+
+.section-container .form1 .anketa select:hover {
+    border-bottom: 2px solid var(--boja2);
+}
+
+.section-container .form1 .anketa select:focus {
+    border-bottom: 2px solid var(--boja2);
+}
+
+.section-container .form2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    appearance: none;
+    background: transparent;
+    background-color: #fff;
+    border: none;
+    font-size: 15pt;
+    color: #333;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.section-container .form2  input, form textarea {
+    padding: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16pt;
+    margin-bottom: 2%;
+}
+
+.section-container .manji-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.section-container .manji-div h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-container form button {
+    margin-top: 2%;
+    background-color: var(--boja1);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.section-container form button:hover {
+    background-color: var(--boja2);
+    color: #333;
+}
+
+.services-section {
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 50px 53px 4px rgba(0,0,0,0.14);
+    margin-bottom: 5%;
+}
+
+.services-section h2 {
+    font-size: 28px;
+    color: var(--boja1);
+    margin-bottom: 15px;
+}
+
+.services-section p {
+    font-size: 18px;
+    color: #555;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2%;
+    max-width: 70%;
+    margin: auto;
+    padding: 2%;
+}
+
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 50px 53px 4px rgba(0,0,0,0.14);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    padding-top: 7%;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    width: 90%;
+    height: auto;
+    border-bottom: 3px solid var(--boja1);
+}
+
+.service-card h3 {
+    font-size: 17pt;
+    color: var(--boja1);
+    margin: 15px 0;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+    padding: 0 15px 15px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2%;
+    padding: 1%;
+    max-width: 55%;
+    margin: auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+   box-shadow: 0px 50px 53px 4px rgba(0,0,0,0.14);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.07);
+}
+
+.about-intro {
+    background-color: #E8D9B3;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-intro h2 {
+    font-size: 32px;
+    color: var(--boja1);
+}
+
+.about-intro p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+.about-team {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.about-team h3 {
+    font-size: 28px;
+    color: var(--boja1);
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid var(--boja1);
+}
+
+.team-member h4 {
+    font-size: 22px;
+    color: var(--boja1);
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #555;
+}
+
+.company-philosophy {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: var(--boja1);
+    color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+.company-philosophy h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.company-philosophy p {
+    font-size: 18px;
+    max-width: 900px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--boja1);
+    color: white;
+    padding: 1%;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 950px) {
+
+    .section-container {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .section-container .manji-div h3 {
+        font-size: 16pt;
+    }
+}
+
+@media (max-width: 900px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: 50px;
+        border-radius: 0%;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0; 
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: var(--boja1);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 2%;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 86%;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .section-container h1 {
+        font-size: 14pt;
+    }
+
+    .section-container {
+        width: 90%;
+        max-width: 95%;
+        padding: 5%;
+    }
+
+    .section-container .manji-div h3 {
+        font-size: 14pt;
+    }
+}
