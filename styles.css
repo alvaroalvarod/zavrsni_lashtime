@@ -404,12 +404,13 @@ footer.usluge {
     .services-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
     }
+    
 }
 
 
 .video {
     position: relative;
-    padding-bottom: 20%; /* Omjer 16:9 za video */
+    padding-bottom: 40%; /* Omjer 16:9 za video */
     height: 100%;
     overflow: hidden;
     max-width: 100%;
@@ -718,6 +719,10 @@ footer {
 
     .team-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    html{
+        overflow-x: hidden;
     }
 }
 
