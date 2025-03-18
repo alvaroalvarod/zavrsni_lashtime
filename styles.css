@@ -157,7 +157,7 @@ main {
 }
 
 /* MEDIJSKI UPITI - RESPONSIVNOST */
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .section-container {
         flex-direction: column;
         align-items: center;
@@ -407,6 +407,25 @@ footer.usluge {
 }
 
 
+.video {
+    position: relative;
+    padding-bottom: 20%; /* Omjer 16:9 za video */
+    height: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    width: 50%;
+    margin: 0 auto; /* Centriranje video elementa */
+}
+
+/* Iframe stilovi za video */
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
 
 
 
@@ -479,7 +498,7 @@ nav {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Skriveni hamburger meni na većim ekranima */
+
 .menu-toggle {
     display: none;
     font-size: 28px;
@@ -490,7 +509,7 @@ nav {
     top: 12px;
 }
 
-/* Navigacijska lista */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -520,8 +539,8 @@ nav ul li a:hover, nav ul li a.active {
     color: #B57F50;
 }
 
-/* RESPONSIVE STILOVI */
-@media (max-width: 768px) {
+
+@media (max-width: 950px) {
     html {
         overflow-x: hidden;
     }
@@ -530,7 +549,7 @@ nav ul li a:hover, nav ul li a.active {
         border-radius: 0%;
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Smanji širinu navigacije */
+        width: 100%;
         padding: 10px 0; 
     }
 
@@ -548,25 +567,25 @@ nav ul li a:hover, nav ul li a.active {
         left: 0;
         padding: 10px;
         border-radius: 0 0 15px 15px;
-        gap: 15px; /* Smanji razmak između stavki */
+        gap: 15px;
         text-align: center;
     }
 
     #nav-list ul li {
         justify-content: center;
         text-align: center;
-        width: 80%;
+        width: 100%;
     }
 
     #nav-list .show {
-        width: 80% !important;
+        width: 70% !important;
     }
 
     nav ul li a {
         display: block;
-        width: 100%;
-        padding: 10px 20px; /* Smanji padding unutar linkova */
-        font-size: 16px; /* Smanji font */
+        width: 80%;
+        padding: 10px 20px;
+        font-size: 16px;
     }
 
     nav ul.show {
@@ -575,7 +594,7 @@ nav ul li a:hover, nav ul li a.active {
 }
 
 
-/* ABOUT US INTRODUCTION */
+
 .about-intro {
     background-color: #E8D9B3;
     text-align: center;
@@ -685,8 +704,8 @@ footer {
     }
 
     .video {
-        width: 300px;
-        height: 168,75px; 
+        width: 80%;
+        height: 100%
     }
 
     .about-team h3 {
@@ -703,7 +722,11 @@ footer {
 }
 
 
-
+@media (max-width: 1200px){
+    html{
+        overflow-x: hidden;
+    }
+}
 
 
 figcaption {
